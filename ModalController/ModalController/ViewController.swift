@@ -14,6 +14,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func GoTela01(_ sender: UIButton) {
+        performSegue(withIdentifier: "GoTela01", sender: nil)
+    }
+    
 }
-
