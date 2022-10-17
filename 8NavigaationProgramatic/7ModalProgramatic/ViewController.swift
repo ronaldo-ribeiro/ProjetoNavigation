@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 
     @IBAction func tappedGoScreenButton(_ sender: UIButton) {
         let vc = UIStoryboard(name: "Tela02VC", bundle: nil).instantiateViewController(withIdentifier: "Tela02VC") as? Tela02VC
-        self.present(vc ?? UIViewController(), animated: true)
+        self.navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
     }
     
 }
